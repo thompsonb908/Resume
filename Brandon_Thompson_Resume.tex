@@ -23,15 +23,70 @@
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage{mwe}
 \usepackage{caption}
+\usepackage{hyperref}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Brandon Thompson} % Your name
 %\address{3730 Cleveland Heights Blvd\\ Lakeland, Florida 33811} % Your secondary address (optional)
 \address{1427 Persimmon Way \\ Lakeland, Florida 33811} % Your address
+\address{www.linkedin.com/in/thompson-brandon \\ www.github.com/thompsonb908}
 \address{(386) 466-6700 \\ thompson.brandon908@gmail.com} % Your phone number and email
 
 \begin{document}
+
+
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Certifications / Training}
+
+	\begin{tabular}{ @{} l @{\hspace{4ex}} l @{\hspace{6ex}} l @{\hspace{6ex}}}
+		Certified Ethical Hacker (CEH) & Expires: April 2025\\
+		%Certified Penetration Test (CPENT) & In Progress\\
+	\end{tabular}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{Work Experience}
+
+	\begin{rSubsection}{Manifold Analytics}{November 28 2020 - Present}{Security Analyst}{Lakeland, Florida}
+		\item Led implementation of STIGs for compliance with NIST SP 800-171 requirements enabling the company to acquire/store/process CUI data.
+		\item Setting up Active Directory structure, software deployment and Group Policy for the organization thus reducing setup time for new users, and maintaining a system of least privilege.
+		\item Setup of log management and alerts using Graylog Enterprise enabling the company to recieve alerts for malicious actions and maintain accountablilty
+		\item Developing satellite image analysis algorithms in Python and C++ for use in machine learning applications.
+	\end{rSubsection}
+	
+	\begin{rSubsection}{Haines City Technology Management Department}{February 2020 - July 2020}{Intern}{Haines City, Florida}
+		\item Inventory management with Excel. 
+		% \item Basic desktop and printer support. Replacing and cleaning hardware components.
+		% \item Hardware installation of servers and other network devices, desktops and cameras.
+		\item Writing of Standard Operating Procedure and Cost-Based Analysis documents.
+		% \item Large area of service for the entire Haines City infrastructure including fire department, police department, road maintenance, city hall and community centers.
+		%\item Creation of Windows 7 Kiosk machines through registry edits with emphasis on securing the system from malicious users.
+		%\item Nagios monitoring software setup and installation.
+		% \item Creation of a inventory database with Microsoft Access.
+	\end{rSubsection}
+	
+	%\begin{rSubsection}{Florida Polytechnic University}{May 2018 - Summer 2019}{Research Assistant}{}
+	%	\item Co-authored multiple research papers under the lead of Dr.\ Robert Steele.\\
+	%	{\it Machine learning-based prediction of prolonged length of stay in newborns. 2018}\\
+	%	{\it Data mining for generalizable pre-admission prediction of elective length of stay. 2019}
+	%	\item Speaker at the IEEE Computing and Communication Workshop and Conference.
+	%	%\item Applied machine-learning algorithms through Weka software on for prediction of prolonged length of stay of hospital patients.
+	%\end{rSubsection}
+	
+	\end{rSection}
+
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -40,7 +95,7 @@
 \begin{rSection}{Education}
 
 {\bf Florida Polytechnic University, Florida} \hfill { August 2017 - May 2021} 
-\\ Bachelor of Science Computer Science\hfill {Current GPA: 3.62}
+\\ Bachelor of Science Computer Science\hfill %{Final GPA: 3.62}
 \\ Concentration: Cybersecurity
 %\\{\bf } \hfill { July 2013 - June 2017} 
 %\\ Bachelor of Engineering, Civil.\hfill { Overall Percentage: 68.14 }
@@ -50,75 +105,9 @@
 \end{rSection}
 
 
-%----------------------------------------------------------------------------------------
-%	CERTIFICATIONS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Certifications}
-
-	\begin{tabular}{ @{} l @{\hspace{4ex}} l @{\hspace{6ex}} l @{\hspace{6ex}}}
-		EC-Council Certified Ethical Hacker & Expires: April 2025 & Certification \#: ECC3025896417
-	\end{tabular}
-
-\end{rSection}
 
 
 
-\begin{rSection}{Career Objective}
- To work for an organization which provides the opportunity to improve my skills and knowledge to grow along with the organization's objectives.
-\end{rSection}
-
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Strengths}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Cybersecurity Tools & Kali Linux, Wireshark, Nmap, IP Scanners\\
-Programming Languages \ & Java, C++, Python, PHP\\
-%Modeling and Analysis \ & AutoCad, SolidWorks \\
-%Soldering \ & Through-hole, PCB, Wire-to-wire\\
-Software \& Tools & MS Office, Latex, Windows OS, Linux OS, Git\\
-
-\end{tabular}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Work Experience}
-
-\begin{rSubsection}{Manifold Analytics}{November 28 2020 - Present}{ Algorithm Developer \& Cybersecurity}{}
-	\item Led implementation of STIGs for compliance with NIST SP 800-171 cybersecurity requirements.
-	\item Managing Active Directory structure, software deployment and Group Policy for the organization.
-	\item Developing image analysis algorithms to gather data from an image for use in machine learning predictions.
-	\item Developing machine learning models using Tensorflow for classification.
-\end{rSubsection}
-
-\begin{rSubsection}{Haines City Technology Management Department}{February 2020 - July 2020}{Intern}{}
-	\item Inventory management with Excel. 
-	% \item Basic desktop and printer support. Replacing and cleaning hardware components.
-	% \item Hardware installation of servers and other network devices, desktops and cameras.
-	\item Writing of Standard Operating Procedure and Cost-Based Analysis documents.
-	% \item Large area of service for the entire Haines City infrastructure including fire department, police department, road maintenance, city hall and community centers.
-	\item Creation of Windows 7 Kiosk machines through registry edits with emphasis on securing the system from malicious users.
-	\item Nagios monitoring software setup and installation.
-	% \item Creation of a inventory database with Microsoft Access.
-\end{rSubsection}
-
-\begin{rSubsection}{Florida Polytechnic University}{May 2018 - Summer 2019}{Research Assistant}{}
-	\item Co-authored multiple research papers under the lead of Dr.\ Robert Steele.\\
-	{\it Machine learning-based prediction of prolonged length of stay in newborns. 2018}\\
-	{\it Data mining for generalizable pre-admission prediction of elective length of stay. 2019}
-	\item Speaker at the IEEE Computing and Communication Workshop and Conference.
-	\item Applied machine-learning algorithms through Weka software for prediction of prolonged length of stay of hospital patients.
-\end{rSubsection}
-
-\end{rSection}
 
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
@@ -131,61 +120,61 @@ Software \& Tools & MS Office, Latex, Windows OS, Linux OS, Git\\
 %--------------------------------------------------------------------------------
 %    Projects And Seminars
 %-----------------------------------------------------------------------------------------------
-\begin{rSection}{Relevant Coursework}
-	\begin{tabular}{ @{} >{}l @{\hspace{10ex}} l l}
-		% Programming Languages \ & { COP 4020}\\
-		Digital Forensics \ & { CIS 4203} & A\\
-		Ethical Hacking \ & { CIS 4204} & A\\
-		% Senior Design 2 \ & { COP 4935C} & \\
-		% Senior Design 1 \ & { COP 4934C} & A\\
-		% Principles of Microeconomics \ & { ECO 2023} & A-\\
-		% Introduction to Humanities \ & { HUM 2020} & A-\\
-		% American History Since 1877 \ & { AMH 2020} & A-\\
-		% Legal Ethical and Management Issues in Technology \ & { IDS 2144} & A-\\
-		% Machine Learning \ & { CAP 4612} & A\\
-		% Profession Experience Internship & { IDS 4941} & S\\
-		Computer Security \ & { CIS 4367} & A\\
-		Introduction to Computer Networks \ & { CNT 3004} & A\\
-		% Mobile Device Applications \ & { COP 4656} & A\\
-		Operating System Concepts \ & { COP 4610} & B\\
-		% Computer Architecture and Organization \ & { EEL 4768} & A\\
-		Applied Cryptography \ & { CIS 4362} & A\\
-		Software Security Testing \ & { CEN 4088} & A-\\
-		% Artificial Intelligence \ & { CAP 4630} & B+\\
-		% Software Engineering \ & { CEN 4010} & B\\
-		% Digital Media Production \ & { DIG 2520} & A-\\
-		% Algorithm Design and Analysis\ & { COP 4531} & C+\\
-		% Data Structures \ & { COP 4415} & B+\\
-		% Database 1 \ & { COP 3710} & B+\\
-		% Digital Logic Design \ & { EEL 3702} & A-\\
-		% Computer Programming 2 \ & { COP 3330} & B-\\
-		% Computer Programming 1 \ & { COP 2272} & A-\\
-		% Introduction to Unix \ & { COP 3353} & A\\
-		% Statistics 1 \ & { STA 2023} & B\\
-		% Discrete Mathematics \ & { MAD 2104} & B-\\
-		% Computational Linear Algebra \ & { MAS 3114} & A\\
-		% Differential Equations \ & { MAP 2302} & A\\
-		% Physics 2 \ & { PHY 2049/L} & A-/A\\
-		% Introduction to Computation and Programming \ & { COP 2271} & A\\
-		% Concepts and Methods \ & { EGN 1007} & A\\
-		% Technical Writing \ & { ENC 2210} & B\\
-		% Analytic Geometry and Calculus 2 \ & { MAC 2312} & A-\\
-		% Physics 1 \ & { PHY 2048/L} & A-/A\\
-		% Biology 1 \ & { BSC 1010/L} & A/A\\
-		% English Comp. 1 \ & { ENC 1101} & A\\
-		% Introduction to Stem { IDS 1380} & A\\
-		% Analytic Geometry and Calculus 1 { MAC 2311} & A\\
-		% First Year Experience \ & { SLS 1106} & A\\
-	\end{tabular}
-\\
-\end{rSection}
+%\begin{rSection}{Relevant Coursework}
+%	\begin{tabular}{ @{} >{}l @{\hspace{10ex}} l l}
+%		% Programming Languages \ & { COP 4020}\\
+%		Digital Forensics \ & { CIS 4203} & A\\
+%		Ethical Hacking \ & { CIS 4204} & A\\
+%		% Senior Design 2 \ & { COP 4935C} & \\
+%		% Senior Design 1 \ & { COP 4934C} & A\\
+%		% Principles of Microeconomics \ & { ECO 2023} & A-\\
+%		% Introduction to Humanities \ & { HUM 2020} & A-\\
+%		% American History Since 1877 \ & { AMH 2020} & A-\\
+%		% Legal Ethical and Management Issues in Technology \ & { IDS 2144} & A-\\
+%		% Machine Learning \ & { CAP 4612} & A\\
+%		% Profession Experience Internship & { IDS 4941} & S\\
+%		Computer Security \ & { CIS 4367} & A\\
+%		Introduction to Computer Networks \ & { CNT 3004} & A\\
+%		% Mobile Device Applications \ & { COP 4656} & A\\
+%		Operating System Concepts \ & { COP 4610} & B\\
+%		% Computer Architecture and Organization \ & { EEL 4768} & A\\
+%		Applied Cryptography \ & { CIS 4362} & A\\
+%		Software Security Testing \ & { CEN 4088} & A-\\
+%		% Artificial Intelligence \ & { CAP 4630} & B+\\
+%		% Software Engineering \ & { CEN 4010} & B\\
+%		% Digital Media Production \ & { DIG 2520} & A-\\
+%		% Algorithm Design and Analysis\ & { COP 4531} & C+\\
+%		% Data Structures \ & { COP 4415} & B+\\
+%		% Database 1 \ & { COP 3710} & B+\\
+%		% Digital Logic Design \ & { EEL 3702} & A-\\
+%		% Computer Programming 2 \ & { COP 3330} & B-\\
+%		% Computer Programming 1 \ & { COP 2272} & A-\\
+%		% Introduction to Unix \ & { COP 3353} & A\\
+%		% Statistics 1 \ & { STA 2023} & B\\
+%		% Discrete Mathematics \ & { MAD 2104} & B-\\
+%		% Computational Linear Algebra \ & { MAS 3114} & A\\
+%		% Differential Equations \ & { MAP 2302} & A\\
+%		% Physics 2 \ & { PHY 2049/L} & A-/A\\
+%		% Introduction to Computation and Programming \ & { COP 2271} & A\\
+%		% Concepts and Methods \ & { EGN 1007} & A\\
+%		% Technical Writing \ & { ENC 2210} & B\\
+%		% Analytic Geometry and Calculus 2 \ & { MAC 2312} & A-\\
+%		% Physics 1 \ & { PHY 2048/L} & A-/A\\
+%		% Biology 1 \ & { BSC 1010/L} & A/A\\
+%		% English Comp. 1 \ & { ENC 1101} & A\\
+%		% Introduction to Stem { IDS 1380} & A\\
+%		% Analytic Geometry and Calculus 1 { MAC 2311} & A\\
+%		% First Year Experience \ & { SLS 1106} & A\\
+%	\end{tabular}
+%\\
+%\end{rSection}
 
-\begin{rSection}{School Projects} \itemsep -3pt
-	\item Ethical Hacking - Hacking Linux server using the single user boot mode to change the root password.
-	\item Digital Forensics - Linux server retrieval of deleted documents after a system hack.
-	\item Senior Design I/II - Computer Vision model for Whitning-Turner Construction company to track various metrics on work sites and improve safety.
-	\item Operating Systems Concepts - Implementing system calls and Multilevel Feedback Queue Scheduler on a minimal operating system.
-	\item Mobile Device Applications - Ingredient tracking app that allows the user to search a database for recipes that contain specific ingredients.
+\begin{rSection}{School Projects}
+	\item Ethical Hacking - Hacking of a version 7 CentOS server using the single user boot mode to change the root password, bypassing selinux and gaining root level access to the machine.
+	%\item Digital Forensics - Linux server retrieval of deleted documents after a system hack.
+	\item Senior Design I/II - Winner of the Capstone Showcase - Best Computer Science Project 2021. Retrainable object detection model for Whitning-Turner Construction company to track various metrics on work sites and improve safety. Included user friendly web app interface allowing the user to upload training images and labels as well as run and test models on the hosting server.
+	\item Operating Systems Concepts - Implementing system calls in C and a Multilevel Feedback Queue Scheduler (MLFQ) to manage context switching of processes on a minimal Linux operating system.
+	%\item Mobile Device Applications - Ingredient tracking app that allows the user to search a database for recipes that contain specific ingredients.
 	% \item Software Engineering - Hotel Management System that allows guest and employee logins. Guests can reserve rooms or request service and employees can track service requests.
 	% \item Database 1 - Creation of SQL database that tracks nutritional data for the on campus cafeteria.
 \end{rSection}
@@ -193,15 +182,12 @@ Software \& Tools & MS Office, Latex, Windows OS, Linux OS, Git\\
 %----------------------------------------------------------------------------------------
 % Extra Curricular
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Extra-Curricular} \itemsep -3pt
-	\item Winner of the Florida Poly Capstone Showcase - Best Computer Science project 2021
-	\item Attempting to set up a personal cybersecurity lab for testing purposes.
-	\item Have seven consecutive years as member of a robotics team. (2013 - 2020)\\
-	Four years as part of FIRST FRC Robotics team 3556. (2013-2017)
-	%\\ Presently a member of VEX-University.
-	% \item Learning full-stack development in my free time.
-	\item Volunteered for two weeks at a SeriousFun Children's Network summer camp for kids with serious illnesses. (Summer 2019)
-\end{rSection}
+%\begin{rSection}{Extra-Curricular} \itemsep -3pt
+	%\item Winner of the Florida Poly Capstone Showcase - Best Computer Science project 2021
+	%\item Have seven consecutive years as member of a robotics team. (2013 - 2020)\\
+	%Four years as part of FIRST FRC Robotics team 3556. (2013-2017)
+	%\item Volunteer at a SeriousFun Children's Network summer camp for kids with serious illnesses.
+%\end{rSection}
 
 % \begin{rSection}{Personality Traits}
 % 	\item Highly motivated and eager to learn new things.
